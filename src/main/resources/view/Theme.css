@@ -1,0 +1,357 @@
+/* import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* sign in css */
+
+.background-image-sign-in{
+    -fx-background-image: url("/images/Css/signInBG.png");
+    -fx-background-position: center center;
+}
+
+.text-title {
+     -fx-font-family: 'Rowdies', cursive;
+     -fx-alignment: CENTER;
+}
+
+.textfield-name {
+    -fx-background-color: transparent;
+    -fx-font-family: 'Concert One', sans-serif;
+    -fx-background-insets: 0 0 1 0;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #B4B4B4;
+    -fx-text-field: #969696;
+}
+
+.button-rectangle {
+    -fx-font-family: 'Concert One', sans-serif;
+    -fx-alignment: CENTER;
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 20;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #6D42DF 0%, #502FA8 100%),
+        #6938ED,
+        #5E33CF,
+        radial-gradient(center 50% 50%, radius 100%, #9C79F8, #8C6EDB);
+    -fx-effect: dropshadow(gaussian, rgba(169, 169, 169, 0.75), 4, 0, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.5em;
+    -fx-font-color: #969696;
+    -fx-alignment: center;
+}
+
+.button-rectangle:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #714AD6 0%, #5B3FA6 100%),
+        #6938ED,
+        #5E33CF,
+        radial-gradient(center 50% 50%, radius 100%, #A88DEF, #9E89D6);
+}
+
+.button-rectangle:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.button-rectangle Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow(gaussian, black, 0, 0, 0, 2);
+}
+
+/* main menu css */
+
+.background-image-main-menu {
+    -fx-background-image: url("/images/Css/mainMenuBG.png");
+    -fx-background-position: center center;
+}
+
+.button-square {
+    -fx-font-family: 'Concert One', sans-serif;
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0 0 1 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 15;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #4A4999 0%, #3C3B89 100%),
+        #535392,
+        #2A2874,
+        radial-gradient(center 50% 50%, radius 100%, #6D6CD4, #5A59C8);
+    -fx-effect: dropshadow(gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.3em;
+}
+.button-square:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #4A4999 0%, #3C3B89 100%),
+        #535392,
+        #6F6EA6,
+        radial-gradient(center 50% 50%, radius 100%, #7E7DD1, #8C8BD8);
+}
+
+.button-square:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.button-square Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+.text-subtitle {
+    -fx-font-family: 'Concert One', sans-serif;
+     -fx-font-size: 1.7em;
+     -fx-text-fill: #969696;
+     -fx-alignment: CENTER;
+}
+
+.text-heading2 {
+    -fx-font-family: 'Concert One', sans-serif;
+     -fx-font-size: 2.6em;
+     -fx-text-fill: #969696;
+     -fx-alignment: CENTER;
+}
+
+.text-heading3 {
+    -fx-font-family: 'Concert One', sans-serif;
+     -fx-font-size: 1.1em;
+     -fx-text-fill: #969696;
+     -fx-alignment: CENTER;
+}
+
+.textfield {
+    -fx-font-family: 'Concert One', sans-serif;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 0 1 0;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #969696;
+    -fx-text-field: white;
+
+}
+
+.button-rectangle-main-menu {
+    -fx-font-family: 'Concert One', sans-serif;
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 20;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #BB3CAA 0%, #79286E 100%),
+        #F16EE0,
+        #FF61EA,
+        radial-gradient(center 50% 50%, radius 100%, #FF78ED, #EF6CDE);
+    -fx-effect: dropshadow(gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.5em;
+    -fx-font-color: #969696;
+    -fx-alignment: center;
+}
+
+.button-rectangle-main-menu:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #BB3CAA 0%, #79286E 100%),
+        #F16EE0,
+        #FFB4F5,
+        radial-gradient(center 50% 50%, radius 100%, #FFB4F5, #FFAAF4);
+}
+
+.button-rectangle-main-menu:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.button-rectangle-main-menu Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow(gaussian, black, 0, 0, 0, 2);
+}
+
+/* how to play button */
+
+.button-gray {
+    -fx-font-family: 'Concert One', sans-serif;
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 20;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #595757 0%, #505050 100%),
+        #696868,
+        #605E5E,
+        radial-gradient(center 50% 50%, radius 100%, #929191, #9F9B9B);
+    -fx-effect: dropshadow(gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.5em;
+    -fx-font-color: #969696;
+    -fx-alignment: center;
+}
+
+.button-gray:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #666565 0%, #6D6969 100%),
+        #696868,
+        #B8B7B7,
+        radial-gradient(center 50% 50%, radius 100%, #9F9F9F, #BDBBBB);
+}
+
+.button-gray:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.button-gray Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow(gaussian, black, 0, 0, 0, 2);
+}
+
+
+/* existing lobbies css */
+
+.background-pop-up {
+    -fx-background-image: url("/images/css/popUpBG.png");
+    -fx-background-position: center center;
+}
+
+.text-heading1 {
+     -fx-font-family: 'Rowdies', cursive;
+     -fx-font-color: #969696;
+     -fx-alignment: CENTER;
+}
+
+/* lobby css */
+
+.background-lobby {
+    -fx-background-image: url("/images/Css/BG.png");
+    -fx-background-position: center center;
+}
+
+.button-rectangle-lobby {
+    -fx-font-family: 'Concert One', sans-serif;
+    -fx-alignment: CENTER;
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 20;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #6D42DF 0%, #502FA8 100%),
+        #6938ED,
+        #5E33CF,
+        radial-gradient(center 50% 50%, radius 100%, #F9F6FF, #FCFAFF);
+    -fx-effect: dropshadow(gaussian, rgba(169, 169, 169, 0.75), 4, 0, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.5em;
+    -fx-font-color: #969696;
+    -fx-alignment: center;
+}
+
+.button-rectangle-lobby:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #714AD6 0%, #5B3FA6 100%),
+        #6938ED,
+        #5E33CF,
+        radial-gradient(center 50% 50%, radius 100%, #D0B9FF, #C0A5F6);
+}
+
+.button-rectangle-lobby:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.button-rectangle-lobby Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow(gaussian, black, 0, 0, 0, 2); /* Change shadow color to black */
+}
+
+
+/* chatbox */
+
+.text-chatbox {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 20px;
+
+}
+
+/* game css */
+
+.background-game {
+    -fx-background-image: url("/images/css/BG.png");
+    -fx-background-position: center center;
+}
+
+.text-pane {
+    -fx-background-color: #F7F3FF; /* Set background color */
+    -fx-border-color: transparent; /* Set transparent border color */
+    -fx-border-width: 2; /* Set border width */
+    -fx-background-radius: 18; /* Set background radius for rounded edges */
+    -fx-padding: 10; /* Add padding to create space between text and border */
+}
+
+.text-prompt {
+    -fx-font-family: 'Concert One', sans-serif;
+     -fx-font-size: 2.4em;
+     -fx-text-fill: #969696;
+}
+
+.button-prev {
+    -fx-graphic: url('/Images/Icons/prev.png');
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.button-next {
+    -fx-graphic: url('/Images/Icons/next.png');
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.text-red {
+     -fx-font-family: 'Concert One', sans-serif;
+     -fx-text-fill: #FF3838;
+     -fx-alignment: CENTER;
+}
+
+/* vote css */
+
+.background-vote {
+    -fx-background-image: url("/images/Css/voteBG.png");
+    -fx-background-position: center center;
+}
+
+.button-vote {
+    -fx-background-color: #F7F3FF;
+    -fx-background-radius: 13;
+    -fx-border-radius: 13;
+}
+
+.text-countdown {
+    -fx-font-family: 'Concert One', sans-serif;
+     -fx-font-size: 3.8em;
+     -fx-text-fill: #969696;
+     -fx-alignment: CENTER;
+}
+
+.meme-padding {
+    -fx-padding: 10px 0 10px 0;
+}
+
+.text-padding {
+    -fx-padding: 0 0 10px 0; /* 10px top padding */
+    -fx-font-family: 'Concert One', sans-serif;
+    -fx-font-size: 2.6em;
+    -fx-text-fill: #969696;
+    -fx-alignment: CENTER;
+}
+
+/* leaderboard css */
+
+.background-leaderboard {
+    -fx-background-image: url("/images/Css/BG.png");
+    -fx-background-position: center center;
+}
+
+.text-winner {
+    -fx-font-family: 'Concert One', sans-serif;
+     -fx-text-fill: #202020;
+     -fx-alignment: CENTER;
+
+}
+

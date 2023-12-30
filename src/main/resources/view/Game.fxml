@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="background-game" stylesheets="@/view/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.something.controllers.GameController">
+   <children>
+      <Text fx:id="RoundNumber" layoutX="833.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading1" text="Round 1" textAlignment="CENTER" wrappingWidth="304.9034423828125" AnchorPane.leftAnchor="833.0" AnchorPane.rightAnchor="782.0965576171875" AnchorPane.topAnchor="49.462890625">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Text>
+      <Pane layoutX="115.0" layoutY="192.0" prefHeight="139.0" prefWidth="1146.0" styleClass="text-pane">
+      <Text fx:id="Prompt" layoutX="26.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading2" text="When someone at your house eats that one food item at home you've been thinking about all day" textAlignment="CENTER" wrappingWidth="1088.9500122070312">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      </Pane>
+      <Pane layoutX="115.0" layoutY="374.0" prefHeight="533.0" prefWidth="1146.0" styleClass="text-pane">
+      <BorderPane layoutX="-43.0" layoutY="10.0" prefHeight="407.0" prefWidth="1228.0" AnchorPane.bottomAnchor="116.60000000000002" AnchorPane.leftAnchor="-43.0" AnchorPane.rightAnchor="-38.59999999999991">
+         <left>
+            <Button fx:id="PrevMeme" mnemonicParsing="false" onAction="#handlePrevMeme" prefHeight="115.0" prefWidth="135.0" styleClass="button-prev" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="70.0" />
+               </BorderPane.margin>
+            </Button>
+         </left>
+         <right>
+            <Button fx:id="NextMeme" mnemonicParsing="false" onAction="#handleNextMeme" prefHeight="103.0" prefWidth="115.0" styleClass="button-next" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="70.0" />
+               </BorderPane.margin>
+            </Button>
+         </right>
+         <center>
+            <ImageView fx:id="MemeImage" fitHeight="327.0" fitWidth="777.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <Text fx:id="CardIndexView" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading1" text="Card 1/6" textAlignment="CENTER" wrappingWidth="166.80339670181274" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin>
+            </Text>
+         </top>
+      </BorderPane>
+      </Pane>
+      <Button fx:id="ShuffleButton" layoutX="788.0" layoutY="826.0" mnemonicParsing="false" onAction="#handleShuffle" prefHeight="60.0" prefWidth="300.0" styleClass="button-rectangle-main-menu" text="Shuffle" AnchorPane.bottomAnchor="194.0" />
+      <Button fx:id="DealButton" layoutX="311.0" layoutY="826.0" mnemonicParsing="false" onAction="#handleDeal" prefHeight="60.0" prefWidth="300.0" styleClass="button-rectangle-main-menu" text="Deal Card" AnchorPane.bottomAnchor="194.0" />
+      <Pane layoutX="1316.0" layoutY="187.0" prefHeight="720.0" prefWidth="558.0" styleClass="text-pane">
+         <children>
+            <VBox layoutX="18.0" layoutY="2.0" prefHeight="722.0" prefWidth="525.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading1" text="ChatBox" textAlignment="CENTER" wrappingWidth="520.2106628417969">
+                     <font>
+                        <Font name="System Bold" size="45.0" />
+                     </font>
+                  </Text>
+                  <ScrollPane prefHeight="577.0" prefWidth="525.0"  styleClass="text-chatbox">
+                     <content>
+                        <VBox fx:id="chatVBox" prefHeight="750.0" prefWidth="503.0" styleClass="text-chatbox"/>
+                     </content>
+                  </ScrollPane>
+                  <SplitPane dividerPositions="0.7571701720841301" prefHeight="56.0" prefWidth="525.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="83.0" prefWidth="379.0" styleClass="anchor-pane">
+                           <children>
+                              <TextField fx:id="Message" layoutX="-5.0" layoutY="-2.0" prefHeight="60.0" prefWidth="402.0" styleClass="text-chatbox"/>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="54.0" prefWidth="128.0">
+                           <children>
+                              <Button layoutX="-23.0" layoutY="-17.0" mnemonicParsing="false" onAction="#handleMessage" prefHeight="93.0" prefWidth="170.0" styleClass="button-rectangle" text="Send">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   <Rectangle fx:id="Shade" arcHeight="5.0" arcWidth="5.0" fill="#2121213b" height="764.0" layoutX="31.0" layoutY="178.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1274.0" />
+   <Label fx:id="WaitingLabel" layoutX="458.0" layoutY="329.0" styleClass="text-red" text="Waiting For Other Players to Deal...">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="background-vote" stylesheets="@/view/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.something.controllers.VotingController">
+   <children>
+      <Text fx:id="TimerCount" layoutX="1625.6" layoutY="190.71328125" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-countdown" text="3" textAlignment="CENTER" wrappingWidth="107.0" AnchorPane.rightAnchor="187.4000000000001" AnchorPane.topAnchor="134.6">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Text>
+      <Text layoutX="754.0" layoutY="121.537109375" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading1" text="Cast Your Vote!" textAlignment="CENTER" wrappingWidth="558.986328125" AnchorPane.leftAnchor="754.0" AnchorPane.rightAnchor="607.013671875" AnchorPane.topAnchor="46.0">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Text>
+      <GridPane alignment="CENTER" layoutX="102.0" layoutY="310.0" prefHeight="652.0" prefWidth="1730.0" styleClass="button-vote" AnchorPane.bottomAnchor="118.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="88.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="588.0" minWidth="10.0" prefWidth="588.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="625.6000732421875" minWidth="10.0" prefWidth="591.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="589.6000732421876" minWidth="10.0" prefWidth="550.4000000000001" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="Image0_0" fitHeight="270.0" fitWidth="564.0" pickOnBounds="true" preserveRatio="true" styleClass="meme-padding" visible="false" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></ImageView>
+            <Text fx:id="Player0_0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-padding" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="591.3368148803711" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="15.0" />
+               </GridPane.margin>
+            </Text>
+            <ImageView fx:id="Image1_0" fitHeight="265.0" fitWidth="582.0" pickOnBounds="true" preserveRatio="true" styleClass="meme-padding" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></ImageView>
+            <Text fx:id="Player1_0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-padding" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="593.0362548828125" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="15.0" />
+               </GridPane.margin>
+            </Text>
+            <ImageView fx:id="Image2_0" fitHeight="264.0" fitWidth="570.0" pickOnBounds="true" preserveRatio="true" styleClass="meme-padding" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></ImageView>
+            <Text fx:id="Player2_0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-padding" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="552.236328125" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="15.0" />
+               </GridPane.margin>
+            </Text>
+            <ImageView fx:id="Image0_1" fitHeight="259.0" fitWidth="564.0" pickOnBounds="true" preserveRatio="true" styleClass="meme-padding" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></ImageView>
+            <Text fx:id="Player0_1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-padding" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="589.0363388061523" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="15.0" />
+               </GridPane.margin>
+            </Text>
+            <ImageView fx:id="Image1_1" fitHeight="259.0" fitWidth="557.0" pickOnBounds="true" preserveRatio="true" styleClass="meme-padding" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></ImageView>
+            <Text fx:id="Player1_1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-padding" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="592.6363525390625" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="15.0" />
+               </GridPane.margin>
+            </Text>
+            <ImageView fx:id="Image2_1" fitHeight="264.0" fitWidth="568.0" pickOnBounds="true" preserveRatio="true" styleClass="meme-padding" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></ImageView>
+            <Text fx:id="Player2_1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-padding" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="555.83642578125" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="15.0" />
+               </GridPane.margin>
+            </Text>
+            <Button fx:id="Grid0_0" mnemonicParsing="false" onAction="#handleClick" prefHeight="389.0" prefWidth="641.0" style="-fx-background-color:transparent" styleClass="meme-padding" visible="false" />
+            <Button fx:id="Grid1_0" mnemonicParsing="false" onAction="#handleClick" prefHeight="406.0" prefWidth="646.0" style="-fx-background-color:transparent" styleClass="meme-padding" visible="false" GridPane.columnIndex="1" />
+            <Button fx:id="Grid2_0" mnemonicParsing="false" onAction="#handleClick" prefHeight="406.0" prefWidth="646.0" style="-fx-background-color:transparent" styleClass="meme-padding" visible="false" GridPane.columnIndex="2" />
+            <Button fx:id="Grid0_1" mnemonicParsing="false" onAction="#handleClick" prefHeight="406.0" prefWidth="646.0" style="-fx-background-color:transparent" styleClass="meme-padding" visible="false" GridPane.rowIndex="1" />
+            <Button fx:id="Grid1_1" mnemonicParsing="false" onAction="#handleClick" prefHeight="406.0" prefWidth="646.0" style="-fx-background-color:transparent" styleClass="meme-padding" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="Grid2_1" mnemonicParsing="false" onAction="#handleClick" prefHeight="406.0" prefWidth="646.0" style="-fx-background-color:transparent" styleClass="meme-padding" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Text fx:id="Shuffled0_0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading2" text="Shuffled" textAlignment="CENTER" visible="false" wrappingWidth="568.13671875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="Shuffled1_0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading2" text="Shuffled" textAlignment="CENTER" visible="false" wrappingWidth="568.13671875" GridPane.columnIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="Shuffled2_0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading2" text="Shuffled" textAlignment="CENTER" visible="false" wrappingWidth="568.13671875" GridPane.columnIndex="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="Shuffled0_1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading2" text="Shuffled" textAlignment="CENTER" visible="false" wrappingWidth="568.13671875" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="Shuffled1_1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading2" text="Shuffled" textAlignment="CENTER" visible="false" wrappingWidth="568.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="Shuffled2_1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-heading2" text="Shuffled" textAlignment="CENTER" visible="false" wrappingWidth="568.13671875" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <Pane layoutX="101.0" layoutY="155.0" prefHeight="120.0" prefWidth="1460.0" styleClass="text-pane">
+         <children>
+            <Text fx:id="Prompt" layoutX="33.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-prompt" text="Prompt _________________________________________________________________________________" wrappingWidth="1414.0">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
